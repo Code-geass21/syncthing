@@ -12,6 +12,8 @@ services:
     volumes:
       - ./config:/config
       - ./sync:/sync
+      # Your specific host folder bind is added here:
+      - "/home/tony/Logseq Mobile:/sync/Logseq Mobile"
 
     ports:
       # Syncthing Web UI
